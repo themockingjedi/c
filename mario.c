@@ -13,7 +13,7 @@ int main(void)
     { 
         for(int d = 0; d <= -r + (n - 1); d++) //DOTS
            {
-               printf(" ");
+               printf("");
            }
                 for (int c = 0; c <= r; c++) //column
                 {
