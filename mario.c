@@ -14,7 +14,7 @@ int main(void)
     {
         for(int d = 0; d < n - (r + 1); d++)
         {
-            printf(".");
+            printf(" ");
         }
             for (int c = 0; c <= r; c++)
             {
