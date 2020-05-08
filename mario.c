@@ -9,17 +9,18 @@ int main(void)
        n = get_int("Number:");
     }
     while (n < 1 || n > 8);
-    for (int r = 0; r < n; r++) //row
-    { 
-        for(int d = 0; d <= -r + (n - 1); d++) //DOTS
-           {
-               printf("");
-           }
-                for (int c = 0; c <= r; c++) //column
-                {
-                    printf("#");
-                }
-                printf("\n");
+    
+    for (int r = 0; r < n; r++)
+    {
+        for(int d = 0; d < n - (r + 1); d++)
+        {
+            printf(".");
+        }
+            for (int c = 0; c <= r; c++)
+            {
+                printf("#");
+            }
+            printf("\n");
     }
     return n;
 }
